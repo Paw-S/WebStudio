@@ -1,0 +1,77 @@
+/*why us*/
+
+.strengths__list {
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    padding-top: 94px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+
+    .strengths__item:last-child {
+      margin-right: 30px;
+    }
+  }
+}
+
+.strengths__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: $-additional-bgc;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.strengths__text {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  letter-spacing: 0.05em;
+}
+$icons: "antenna1", "clock1", "diagram1", "astronaut1";
+
+@each $iconName in $icons {
+  .strengths__#{$iconName}::before {
+    background-image: url(../../images/#{$iconName}.png);
+    background-size: 67px;
+  }
+}
+
+// .strengths__antenna::before {
+//   background-image: url(../../images/antenna1.png);
+//   background-size: 67px;
+// }
+// .strengths__clock::before {
+//   background-image: url(../../images/clock1.png);
+//   background-size: 67px;
+// }
+// .strengths__diagram::before {
+//   background-image: url(../../images/diagram1.png);
+//   background-size: 67px;
+// }
+// .strengths__astronaut::before {
+//   background-image: url(../../images/astronaut1.png);
+//   background-size: 67px;
+// }

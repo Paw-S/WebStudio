@@ -1,0 +1,64 @@
+/*regular clients*/
+
+.clients {
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.clients--grid {
+  display: grid;
+  grid-gap: 30px;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.clients__title {
+  padding-top: 94px;
+}
+.company__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  @media screen and (max-width: 768px) {
+    width: 210px;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 226px;
+  }
+  height: 90px;
+  border: 1px solid $-icon-fill;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    border: 1px solid $-accent;
+  }
+}
+.company__icon {
+  fill: $-icon-fill;
+
+  /* тут тупить */
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .company__box:hover & {
+    fill: $-accent;
+  }
+}

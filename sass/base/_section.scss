@@ -1,0 +1,20 @@
+/*section*/
+.section {
+  padding-top: 0px;
+  padding-bottom: 94px;
+  &__title {
+    color: $-secondary-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  &__bgc--grey {
+    background-color: $-additional-bgc;
+  }
+  &__bgc--footer {
+    background-color: $-footer-bgc;
+  }
+}

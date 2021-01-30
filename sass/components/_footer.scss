@@ -1,0 +1,124 @@
+/*footer*/
+
+.footer {
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &--flex {
+    @media screen and (min-width: 480px) {
+      justify-content: center;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+}
+
+.footer__adress {
+  color: $-white;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 24px;
+
+  margin-top: 0px;
+  margin-bottom: 9px;
+
+  &--placeholder {
+    min-width: 270px;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
+}
+.footer__adress__contacts {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-top: 0px;
+  margin-bottom: 9px;
+}
+
+.footer__social {
+  display: flex;
+  margin: 0px !important;
+  padding: 0px;
+
+  &--bgc {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &--text {
+    margin-left: 0px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $-white;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 60px;
+    }
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+}
+
+.footer__form {
+  margin-left: 100px;
+  display: flex;
+  @media screen and (max-width: 768px) {
+    margin: 60px 0px 0px 0px;
+    justify-items: center;
+  }
+  @media screen and (max-width: 1199px) {
+    margin: 60px 0px 0px 0px;
+    text-align: center;
+  }
+}
+
+.footer__form__title {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $-white;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+.footer__form__email {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $-footer-bgc;
+  text-indent: 12px;
+  color: $-white;
+}

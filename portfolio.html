@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--header-->
+    <div>
+      <header class="header container">
+        <div class="header__mobile__menu">
+          <p>
+            <a href="./index.html" class="logo"
+              ><span class="logo--blue">Web</span>Studio</a
+            >
+          </p>
+          <button
+            class="header__button menu--open"
+            type="button"
+            data-menu-button
+            aria-expanded="false"
+          >
+            <svg width="19px" height="19px" aria-lable="mobile on-off">
+              <use
+                class="header__button--cross"
+                href="./images/sprite.svg#close"
+              ></use>
+              <use
+                class="header__button--menu"
+                href="./images/sprite.svg#icon-envelope"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__menu" id="menu-container" data-menu>
+          <nav class="site-nav">
+            <ul class="site-nav__flex list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link">Studio</a>
+              </li>
+              <li class="site-nav__item">
+                <a
+                  href="./portfolio.html"
+                  class="site-nav__link site-nav--current"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="site-auth list">
+            <li class="site-auth__item">
+              <a href="mailto:info@devstudio.com" class="site-auth__link"
+                ><svg class="site-auth__icon" width="16" height="12">
+                  <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="site-auth__item" ;>
+              <a href="tel:insert_phone_number" class="site-auth__link"
+                ><svg class="site-auth__icon" width="10" height="16">
+                  <use href="./images/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +44 096 111 111
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <main>
+      <!--filters-->
+      <section class="section container filters">
+        <ul class="list filters--flex">
+          <li class="filters__item">
+            <button class="button__filter">All</button>
+          </li>
+          <li class="filters__item">
+            <button class="button__filter">Web-paiges</button>
+          </li>
+          <li class="filters__item">
+            <button class="button__filter">Applications</button>
+          </li>
+          <li class="filters__item">
+            <button class="button__filter">Design</button>
+          </li>
+          <li class="filters__item">
+            <button class="button__filter">Marketing</button>
+          </li>
+        </ul>
+      </section>
+      <!--examples-->
+      <section class="section container examples">
+        <ul class="list examples--flex">
+          <li class="examples__item">
+            <a href="" class="examples__link">
+              <div class="examples__link--position">
+                <img
+                  src="./images/2/img.jpg"
+                  alt="Технокряк"
+                  class="examples__photo"
+                />
+                <div class="examples__story">
+                  <p class="examples__story__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Corporis harum hic quod cupiditate. Omnis numquam dolor
+                    illum perspiciatis iusto aut tempora veritatis reprehenderit
+                    error!
+                  </p>
+                </div>
+              </div>
+              <h3 class="examples__title">Fanpage</h3>
+              <p class="examples__type">Web-paige</p>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a href="" class="examples__link">
+              <div class="examples__link--position">
+                <img
+                  src="./images/2/img-2.jpg"
+                  alt="Постер New Orlean vs Golden Star"
+                  class="examples__photo"
+                />
+                <div class="examples__story">
+                  <p class="examples__story__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Corporis harum hic quod cupiditate. Omnis numquam dolor
+                    illum perspiciatis iusto aut tempora veritatis reprehenderit
+                    error!
+                  </p>
+                </div>
+              </div>
+              <h3 class="examples__title">Poster New Orlean vs Golden Star</h3>
+              <p class="examples__type">Design</p>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a href="" class="examples__link">
+              <div class="examples__link--position">
+                <img
+                  src="./images/2/img-3.jpg"
+                  alt="Ресторан Seafood"
+                  class="examples__photo"
+                />
+                <div class="examples__story">
+                  <p class="examples__story__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Corporis harum hic quod cupiditate. Omnis numquam dolor
+                    illum perspiciatis iusto aut tempora veritatis reprehenderit
+                    error!
+                  </p>
+                </div>
+              </div>
+              <h3 class="examples__title">Restaurant Seafood</h3>
+              <p class="examples__type">Application</p>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a href="" class="examples__link">
+              <div class="examples__link--position">
+                <img
+                  src="./images/2/img-5.jpg"
+                  alt="Проект Prime"
+                  class="examples__photo"
+                />
+                <div class="examples__story">
+                  <p class="examples__story__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Corporis harum hic quod cupiditate. Omnis numquam dolor
+                    illum perspiciatis iusto aut tempora veritatis reprehenderit
+                    error!
+                  </p>
+                </div>
+              </div>
+              <h3 class="examples__title">Project Prime</h3>
+              <p class="examples__type">Marketing</p>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a href="" class="examples__link">
+              <div class="examples__link--position">
+                <img
+                  src="./images/2/img-6.jpg"
+                  alt="Проект Boxes"
+                  class="examples__photo"
+                />
+                <div class="examples__story">
+                  <p class="examples__story__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Corporis harum hic quod cupiditate. Omnis numquam dolor
+                    illum perspiciatis iusto aut tempora veritatis reprehenderit
+                    error!
+                  </p>
+                </div>
+              </div>
+              <h3 class="examples__title">Project Boxes</h3>
+              <p class="examples__type">Application</p>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a href="" class="examples__link">
+              <div class="examples__link--position">
+                <img
+                  src="./images/2/img-7.jpg"
+                  alt="Inspiration has no Borders"
+                  class="examples__photo"
+                />
+                <div class="examples__story">
+                  <p class="examples__story__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Corporis harum hic quod cupiditate. Omnis numquam dolor
+                    illum perspiciatis iusto aut tempora veritatis reprehenderit
+                    error!
+                  </p>
+                </div>
+              </div>
+              <h3 class="examples__title">Inspiration has no Borders</h3>
+              <p class="examples__type">Web-paige</p>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a href="" class="examples__link">
+              <div class="examples__link--position">
+                <img
+                  src="./images/2/img-8.jpg"
+                  alt="Издание Limited Edition"
+                  class="examples__photo"
+                />
+                <div class="examples__story">
+                  <p class="examples__story__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Corporis harum hic quod cupiditate. Omnis numquam dolor
+                    illum perspiciatis iusto aut tempora veritatis reprehenderit
+                    error!
+                  </p>
+                </div>
+              </div>
+              <h3 class="examples__title">Limited Edition</h3>
+              <p class="examples__type">Design</p>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a href="" class="examples__link">
+              <div class="examples__link--position">
+                <img
+                  src="./images/2/img-9.jpg"
+                  alt="Проект LAB"
+                  class="examples__photo"
+                />
+                <div class="examples__story">
+                  <p class="examples__story__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Corporis harum hic quod cupiditate. Omnis numquam dolor
+                    illum perspiciatis iusto aut tempora veritatis reprehenderit
+                    error!
+                  </p>
+                </div>
+              </div>
+              <h3 class="examples__title">Project LAB</h3>
+              <p class="examples__type">Marketing</p>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a href="" class="examples__link">
+              <div class="examples__link--position">
+                <img
+                  src="./images/2/img-10.jpg"
+                  alt="Growing Business"
+                  class="examples__photo"
+                />
+                <div class="examples__story">
+                  <p class="examples__story__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Corporis harum hic quod cupiditate. Omnis numquam dolor
+                    illum perspiciatis iusto aut tempora veritatis reprehenderit
+                    error!
+                  </p>
+                </div>
+              </div>
+              <h3 class="examples__title">Growing Business</h3>
+              <p class="examples__type">Application</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!--footer-->
+    <div class="section__bgc--footer">
+      <footer class="container footer">
+        <div class="footer--flex">
+          <div class="footer__adress--placeholder">
+            <p>
+              <a href="./index.html" class="logo logo--white"
+                ><span class="logo--blue">Web</span>Studio</a
+              >
+            </p>
+            <p class="footer__adress">London, 221B Baker Street</p>
+            <ul class="list">
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="footer__adress__contacts"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="footer__adress__contacts"
+                  >+44 096 111 111</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer__social--text">Follow us</p>
+            <ul class="list social footer__social">
+              <li class="social__item">
+                <a href="" class="social__link footer__social--bgc"
+                  ><svg class="social__icon">
+                    <use href="./images/sprite.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link footer__social--bgc"
+                  ><svg class="social__icon">
+                    <use href="./images/sprite.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link footer__social--bgc"
+                  ><svg class="social__icon">
+                    <use href="./images/sprite.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link footer__social--bgc"
+                  ><svg class="social__icon">
+                    <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__form">
+            <form action="" method="POST">
+              <label class="footer__form__title">sign up for newsletter</label>
+              <br />
+              <input
+                class="footer__form__email"
+                type="emmail"
+                placeholder="E-mail"
+                autocomplete="email"
+              />
+              <button type="submit" class="button footer__form__button">
+                Sign up
+              </button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

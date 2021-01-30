@@ -1,0 +1,54 @@
+/*button*/
+.button {
+  color: $-secondary-text-color;
+  background-color: $-button-bgc;
+  text-decoration: none;
+
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+  text-align: center;
+}
+
+.button__primary {
+  @extend .button;
+  font-weight: 700;
+  padding: 10px 32px;
+  width: 200px;
+  height: 50px;
+  color: $-white;
+  background-color: $-accent;
+}
+
+.button__filter {
+  @extend .button;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__filter:hover,
+.button__filter:focus {
+  color: $-white;
+  background-color: $-accent;
+}
+
+.footer__form__button {
+  @extend .button__primary;
+
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+  }
+}
+.modal__form__button {
+  display: flex;
+  justify-content: center;
+}
